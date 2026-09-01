@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=10">
   <link rel="icon" type="image/png" sizes="256x256" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/favicon.png">
 </head>
@@ -115,20 +115,12 @@
           <h2>Nosso <span>time.</span></h2>
         </div>
         <div class="members-copy">
-          <p>Conheça as pessoas que fazem parte do Rotaract Club de Mirandópolis. Explore os perfis para conhecer um pouco mais sobre a trajetória de cada associado.</p>
+          <p>Conheça as pessoas que fazem parte do Rotaract Club de Mirandópolis. A lista abaixo está preparada para receber os associados oficiais do clube.</p>
           <div class="member-search-wrap"><span>⌕</span><input id="memberSearch" type="search" placeholder="Buscar associado..." aria-label="Buscar associado"></div>
         </div>
       </div>
       <div class="members-grid" id="membersGrid"></div>
-      <div class="members-note" id="membersNote"></div>
-      <div class="member-modal" id="memberModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="memberModalName">
-        <div class="member-modal-backdrop" data-close-member></div>
-        <article class="member-modal-card">
-          <button class="member-modal-close" type="button" aria-label="Fechar perfil" data-close-member>×</button>
-          <div class="member-modal-head"><img id="memberModalPhoto" src="" alt=""><div><p class="mini-title">ASSOCIADO</p><h3 id="memberModalName"></h3><p id="memberModalRole"></p></div></div>
-          <div class="member-modal-bio" id="memberModalBio"></div>
-        </article>
-      </div>
+      <div class="members-note" id="membersNote">A lista de associados será exibida aqui assim que os nomes oficiais forem cadastrados no projeto.</div>
     </section>
 
     <section class="section impact" id="impacto">
@@ -180,31 +172,24 @@
     </section>
 
     <section class="section portfolio" id="portfolio">
-      <div class="section-label reveal">05 / PROJETOS</div>
+      <div class="section-label reveal">05 / PORTFÓLIO</div>
       <div class="portfolio-top reveal">
-        <div><p class="mini-title">Impacto em movimento</p><h2>Projetos que<br><span>viram ação.</span></h2></div>
-        <p>Conheça algumas das iniciativas e campanhas realizadas pelo Rotaract Club de Mirandópolis. Clique em um projeto para ver mais informações e registros.</p>
+        <div><p class="mini-title">O que fazemos</p><h2>Ação com<br><span>identidade.</span></h2></div>
+        <p>Este espaço pode receber os projetos reais do clube, com fotos, resultados, parceiros e histórias de cada iniciativa.</p>
       </div>
 
-      <div class="projects-showcase" id="projectsShowcase">
-        <article class="project-card project-feature reveal">
-          <img class="project-photo" src="assets/projects/end-polio-now.png" alt="Campanha End Polio Now" loading="lazy">
-          <div class="project-info"><span>CAUSA GLOBAL · PREVENÇÃO</span><h3>End Polio Now</h3><p>Juntos, podemos construir um mundo livre da poliomielite.</p><button type="button" data-project="0">Conhecer a iniciativa ↗</button></div>
+      <div class="portfolio-grid">
+        <article class="project-card project-large reveal">
+          <div class="project-art art-community"><span>COMUNIDADE</span><strong>01</strong><div class="art-shape"></div></div>
+          <div class="project-info"><span>PROJETO / AÇÃO SOCIAL</span><h3>Projetos que chegam onde precisam</h3><p>Apresente aqui uma iniciativa de impacto comunitário do clube.</p><a href="#contato">Ver projeto ↗</a></div>
         </article>
-        <article class="project-card reveal"><img class="project-photo" src="assets/projects/campanha-polio-dia-criancas.png" alt="Campanha da Pólio e Dia das Crianças" loading="lazy"><div class="project-info"><span>SAÚDE · COMUNIDADE</span><h3>Campanha da Pólio + Dia das Crianças</h3><p>Conscientização, mobilização e momentos especiais com a comunidade.</p><button type="button" data-project="1">Ver projeto ↗</button></div></article>
-        <article class="project-card reveal"><img class="project-photo" src="assets/projects/eu-quero-erradicar-polio.png" alt="Eu quero erradicar a pólio" loading="lazy"><div class="project-info"><span>END POLIO NOW</span><h3>Eu quero erradicar a pólio!</h3><p>Ação de conscientização em apoio à erradicação da pólio.</p><button type="button" data-project="2">Ver projeto ↗</button></div></article>
-        <article class="project-card reveal"><img class="project-photo" src="assets/projects/criancas-em-movimento.png" alt="Crianças em Movimento" loading="lazy"><div class="project-info"><span>INFÂNCIA · INCLUSÃO</span><h3>Crianças em Movimento</h3><p>Projeto voltado ao movimento, bem-estar e inclusão de crianças.</p><button type="button" data-project="3">Ver projeto ↗</button></div></article>
-        <article class="project-card reveal"><img class="project-photo" src="assets/projects/lixo-eletronico.png" alt="Campanha do lixo eletrônico" loading="lazy"><div class="project-info"><span>SUSTENTABILIDADE</span><h3>Campanha do Lixo Eletrônico</h3><p>Arrecadação e conscientização sobre o descarte correto de eletrônicos.</p><button type="button" data-project="4">Ver projeto ↗</button></div></article>
-        <article class="project-card reveal"><img class="project-photo" src="assets/projects/entrega-cestas-basicas.png" alt="Entrega das Cestas Básicas" loading="lazy"><div class="project-info"><span>ASSISTÊNCIA SOCIAL</span><h3>Entrega das Cestas Básicas</h3><p>Mobilização e entrega de alimentos para apoiar famílias.</p><button type="button" data-project="5">Ver projeto ↗</button></div></article>
-        <article class="project-card reveal"><img class="project-photo" src="assets/projects/pascoa-vale-bis.png" alt="Páscoa Vale Bis" loading="lazy"><div class="project-info"><span>SOLIDARIEDADE · PÁSCOA</span><h3>Páscoa Vale Bis</h3><p>Arrecadação e entrega de chocolates para compartilhar alegria.</p><button type="button" data-project="6">Ver projeto ↗</button></div></article>
-      </div>
-
-      <div class="project-modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="projectModalName">
-        <div class="project-modal-backdrop" data-close-project></div>
-        <article class="project-modal-card">
-          <button class="project-modal-close" type="button" aria-label="Fechar projeto" data-close-project>×</button>
-          <img id="projectModalPhoto" src="" alt="">
-          <div class="project-modal-content"><p class="mini-title" id="projectModalCategory"></p><h3 id="projectModalName"></h3><div id="projectModalText"></div></div>
+        <article class="project-card reveal">
+          <div class="project-art art-leadership"><span>LIDERANÇA</span><strong>02</strong><div class="art-lines"></div></div>
+          <div class="project-info"><span>DESENVOLVIMENTO</span><h3>Juventude em movimento</h3><p>Conte aqui uma experiência de formação ou liderança.</p><a href="#contato">Ver projeto ↗</a></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-art art-partnership"><span>CONEXÃO</span><strong>03</strong><div class="art-circle"></div></div>
+          <div class="project-info"><span>PARCERIAS</span><h3>Juntos, o alcance cresce</h3><p>Mostre parceiros e iniciativas construídas em conjunto.</p><a href="#contato">Ver projeto ↗</a></div>
         </article>
       </div>
     </section>
@@ -244,6 +229,29 @@
     <div class="footer-right">DISTRITO 4470 · MIRANDÓPOLIS/SP<br><small>© <span id="year"></span> Rotaract Club de Mirandópolis</small></div>
   </footer>
 
-  <script src="script.js?v=4"></script>
+  <div class="member-modal" id="memberModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="memberModalName">
+    <div class="member-modal-backdrop" data-close-member></div>
+    <div class="member-modal-card" role="document">
+      <button class="member-modal-close" type="button" aria-label="Fechar perfil" data-close-member>×</button>
+      <div class="member-modal-avatar" id="memberModalAvatar"></div>
+      <div class="member-modal-kicker">ROTARACT · DISTRITO 4470</div>
+      <h2 id="memberModalName">Associado</h2>
+      <p class="member-modal-role" id="memberModalRole">Associado</p>
+      <p class="member-modal-text" id="memberModalText">Perfil do associado do Rotaract Club de Mirandópolis.</p>
+      <div class="member-profile-url">
+        <small>LINK INDIVIDUAL</small>
+        <div class="member-url-row">
+          <input id="memberProfileUrl" type="text" readonly aria-label="URL individual do associado">
+          <button id="copyMemberUrl" type="button">Copiar</button>
+        </div>
+      </div>
+      <div class="member-modal-actions">
+        <a id="openMemberUrl" class="btn btn-primary" href="#" target="_blank" rel="noopener">Abrir perfil ↗</a>
+        <button class="btn btn-outline" type="button" data-close-member>Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js?v=10"></script>
 </body>
 </html>

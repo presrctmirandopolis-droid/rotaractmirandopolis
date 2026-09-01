@@ -24,3 +24,13 @@ Basta abrir `index.html` em um navegador moderno.
 - Menu e seção de associados com busca. Para cadastrar os nomes oficiais, edite o array `associados` em `script.js`.
 - Favicon com a roda do Rotaract em rosa e fundo transparente.
 - Alternância entre modo claro e escuro, preservando o rosa da identidade visual. A preferência fica salva no navegador.
+
+
+## Perfis individuais dos associados
+
+Cada associado cadastrado em `script.js` recebe automaticamente uma URL individual no formato:
+`index.html?associado=nome-do-associado`
+
+Ao acessar essa URL diretamente, o site abre o perfil do associado em um modal. O modal também exibe a URL individual e possui botão para copiar o link, facilitando a criação de QR Codes para crachás.
+
+Para personalizar um associado, use campos como `nome`, `cargo`, `iniciais`, `bio` e, opcionalmente, `slug`.
