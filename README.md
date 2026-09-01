@@ -28,9 +28,10 @@ Basta abrir `index.html` em um navegador moderno.
 
 ## Perfis individuais dos associados
 
-Cada associado cadastrado em `script.js` recebe automaticamente uma URL individual no formato:
+Cada associado possui um identificador único (`slug`) derivado do nome. Ao abrir o modal, a URL do navegador é atualizada para:
+
 `index.html?associado=nome-do-associado`
 
-Ao acessar essa URL diretamente, o site abre o perfil do associado em um modal. O modal também exibe a URL individual e possui botão para copiar o link, facilitando a criação de QR Codes para crachás.
+A mesma URL pode ser usada como destino de um QR Code. Ao acessá-la diretamente, o perfil correspondente é aberto automaticamente. No modal também existe o botão **Copiar URL**.
 
-Para personalizar um associado, use campos como `nome`, `cargo`, `iniciais`, `bio` e, opcionalmente, `slug`.
+Depois de publicar o site em um domínio, os QR Codes devem apontar para o endereço público do `index.html` acrescido de `?associado=...`.
