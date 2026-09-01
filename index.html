@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio comercial do Rotaract Club de Mirandópolis — Distrito 4470.">
+  <title>Rotaract Mirandópolis | Distrito 4470</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+</head>
+<body>
+  <div class="cursor-glow"></div>
+  <div class="noise"></div>
+
+  <header class="navbar" id="navbar">
+    <a class="brand" href="#inicio" aria-label="Rotaract Club de Mirandópolis - início">
+      <img src="assets/logo.png" alt="Rotaract Club de Mirandópolis">
+    </a>
+
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links">
+      <a href="#sobre">Quem somos</a>
+      <a href="#impacto">Impacto</a>
+      <a href="#frentes">Frentes</a>
+      <a href="#portfolio">Ações</a>
+      <a href="#associados">Associados</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Ativar modo escuro" aria-pressed="false"><span class="theme-icon">☾</span><span class="theme-label">Modo escuro</span></button>
+      <a href="#contato" class="nav-cta">Vamos criar impacto <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+      <div class="hero-content reveal">
+        <div class="eyebrow"><span class="pulse"></span> Distrito 4470 · Rotaract</div>
+        <h1>Ideias que<br><em>movem pessoas.</em></h1>
+        <p class="hero-copy">
+          Somos o <strong>Rotaract Club de Mirandópolis</strong>: juventude, liderança e ação
+          transformando boas ideias em impacto que permanece.
+        </p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn btn-primary magnetic">Conheça nossas ações <span>↗</span></a>
+          <a href="#sobre" class="text-link">Descubra quem somos <span>↓</span></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="visual-card card-back"></div>
+        <div class="visual-card card-mid"></div>
+        <div class="impact-card tilt">
+          <div class="impact-top">
+            <span>IMPACTO</span>
+            <span class="dot"></span>
+          </div>
+          <div class="impact-number">∞</div>
+          <p>Quando pessoas se unem<br>por um propósito.</p>
+          <div class="impact-footer">
+            <span>Mirandópolis, SP</span>
+            <span>4470</span>
+          </div>
+        </div>
+        <div class="sticker sticker-1">SERVIR<br>É AGIR</div>
+        <div class="sticker sticker-2">+<br>IDEIAS</div>
+      </div>
+
+      <div class="scroll-hint"><span></span> role para explorar</div>
+    </section>
+
+    <section class="marquee" aria-label="Identidade">
+      <div class="marquee-track">
+        <span>LIDERANÇA</span><b>✦</b><span>COMUNIDADE</span><b>✦</b><span>AMIZADE</span><b>✦</b>
+        <span>IMPACTO</span><b>✦</b><span>VOLUNTARIADO</span><b>✦</b><span>LIDERANÇA</span><b>✦</b>
+        <span>COMUNIDADE</span><b>✦</b><span>AMIZADE</span><b>✦</b><span>IMPACTO</span><b>✦</b>
+      </div>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="section-label reveal">01 / QUEM SOMOS</div>
+      <div class="about-grid">
+        <div class="about-heading reveal">
+          <p class="mini-title">Um clube. Muitas possibilidades.</p>
+          <h2>Juventude com<br><span>propósito.</span></h2>
+        </div>
+        <div class="about-text reveal">
+          <p class="large-copy">
+            O Rotaract Club de Mirandópolis reúne jovens que acreditam que
+            <strong>servir também é uma forma de liderar.</strong>
+          </p>
+          <p>
+            Desenvolvemos iniciativas, projetos e experiências que conectam pessoas,
+            fortalecem a comunidade e criam oportunidades para aprender fazendo.
+          </p>
+          <div class="district-badge">
+            <span class="badge-icon">✦</span>
+            <div><small>PARTE DE UMA REDE GLOBAL</small><strong>ROTARACT · DISTRITO 4470</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section members" id="associados">
+      <div class="section-label reveal">02 / ASSOCIADOS</div>
+      <div class="members-top reveal">
+        <div>
+          <p class="mini-title">Quem faz acontecer</p>
+          <h2>Nosso <span>time.</span></h2>
+        </div>
+        <div class="members-copy">
+          <p>Conheça as pessoas que fazem parte do Rotaract Club de Mirandópolis. Explore os perfis para conhecer um pouco mais sobre a trajetória de cada associado.</p>
+          <div class="member-search-wrap"><span>⌕</span><input id="memberSearch" type="search" placeholder="Buscar associado..." aria-label="Buscar associado"></div>
+        </div>
+      </div>
+      <div class="members-grid" id="membersGrid"></div>
+      <div class="members-note" id="membersNote"></div>
+      <div class="member-modal" id="memberModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="memberModalName">
+        <div class="member-modal-backdrop" data-close-member></div>
+        <article class="member-modal-card">
+          <button class="member-modal-close" type="button" aria-label="Fechar perfil" data-close-member>×</button>
+          <div class="member-modal-head"><img id="memberModalPhoto" src="" alt=""><div><p class="mini-title">ASSOCIADO</p><h3 id="memberModalName"></h3><p id="memberModalRole"></p></div></div>
+          <div class="member-modal-bio" id="memberModalBio"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section impact" id="impacto">
+      <div class="section-label reveal">03 / NOSSO IMPACTO</div>
+      <div class="impact-heading reveal">
+        <h2>Transformar intenção<br>em <span>movimento.</span></h2>
+        <p>Nosso portfólio nasce da colaboração: cada ação é uma oportunidade de gerar valor para pessoas e para a comunidade.</p>
+      </div>
+      <div class="impact-grid">
+        <article class="impact-tile reveal">
+          <span class="tile-index">01</span>
+          <div class="tile-symbol">↗</div>
+          <h3>Projetos</h3>
+          <p>Do planejamento à execução, transformamos necessidades em ações práticas.</p>
+        </article>
+        <article class="impact-tile dark reveal">
+          <span class="tile-index">02</span>
+          <div class="tile-symbol">◎</div>
+          <h3>Conexões</h3>
+          <p>Unimos associados, parceiros, comunidade e outras iniciativas para ampliar o alcance.</p>
+        </article>
+        <article class="impact-tile reveal">
+          <span class="tile-index">03</span>
+          <div class="tile-symbol">✦</div>
+          <h3>Liderança</h3>
+          <p>Criamos espaço para desenvolver comunicação, gestão, criatividade e protagonismo.</p>
+        </article>
+        <article class="impact-tile pink reveal">
+          <span class="tile-index">04</span>
+          <div class="tile-symbol">∞</div>
+          <h3>Legado</h3>
+          <p>Mais do que realizar uma ação, buscamos construir impacto duradouro.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section fronts" id="frentes">
+      <div class="section-label reveal">04 / NOSSAS FRENTES</div>
+      <div class="fronts-intro">
+        <h2 class="reveal">Onde a nossa<br><span>energia acontece.</span></h2>
+        <p class="reveal">Um ecossistema de iniciativas para servir, aprender, conectar e fazer acontecer.</p>
+      </div>
+      <div class="front-list">
+        <div class="front-item reveal"><span>01</span><h3>Comunidade</h3><p>Ações que aproximam o clube das necessidades locais.</p><b>↗</b></div>
+        <div class="front-item reveal"><span>02</span><h3>Desenvolvimento</h3><p>Experiências para formar jovens líderes preparados para o futuro.</p><b>↗</b></div>
+        <div class="front-item reveal"><span>03</span><h3>Parcerias</h3><p>Conexões estratégicas que potencializam ideias e resultados.</p><b>↗</b></div>
+        <div class="front-item reveal"><span>04</span><h3>Integração</h3><p>Amizade, companheirismo e momentos que fortalecem a equipe.</p><b>↗</b></div>
+      </div>
+    </section>
+
+    <section class="section portfolio" id="portfolio">
+      <div class="section-label reveal">05 / PROJETOS</div>
+      <div class="portfolio-top reveal">
+        <div><p class="mini-title">Impacto em movimento</p><h2>Projetos que<br><span>viram ação.</span></h2></div>
+        <p>Conheça algumas das iniciativas e campanhas realizadas pelo Rotaract Club de Mirandópolis. Clique em um projeto para ver mais informações e registros.</p>
+      </div>
+
+      <div class="projects-showcase" id="projectsShowcase">
+        <article class="project-card project-feature reveal">
+          <img class="project-photo" src="assets/projects/end-polio-now.png" alt="Campanha End Polio Now" loading="lazy">
+          <div class="project-info"><span>CAUSA GLOBAL · PREVENÇÃO</span><h3>End Polio Now</h3><p>Juntos, podemos construir um mundo livre da poliomielite.</p><button type="button" data-project="0">Conhecer a iniciativa ↗</button></div>
+        </article>
+        <article class="project-card reveal"><img class="project-photo" src="assets/projects/campanha-polio-dia-criancas.png" alt="Campanha da Pólio e Dia das Crianças" loading="lazy"><div class="project-info"><span>SAÚDE · COMUNIDADE</span><h3>Campanha da Pólio + Dia das Crianças</h3><p>Conscientização, mobilização e momentos especiais com a comunidade.</p><button type="button" data-project="1">Ver projeto ↗</button></div></article>
+        <article class="project-card reveal"><img class="project-photo" src="assets/projects/eu-quero-erradicar-polio.png" alt="Eu quero erradicar a pólio" loading="lazy"><div class="project-info"><span>END POLIO NOW</span><h3>Eu quero erradicar a pólio!</h3><p>Ação de conscientização em apoio à erradicação da pólio.</p><button type="button" data-project="2">Ver projeto ↗</button></div></article>
+        <article class="project-card reveal"><img class="project-photo" src="assets/projects/criancas-em-movimento.png" alt="Crianças em Movimento" loading="lazy"><div class="project-info"><span>INFÂNCIA · INCLUSÃO</span><h3>Crianças em Movimento</h3><p>Projeto voltado ao movimento, bem-estar e inclusão de crianças.</p><button type="button" data-project="3">Ver projeto ↗</button></div></article>
+        <article class="project-card reveal"><img class="project-photo" src="assets/projects/lixo-eletronico.png" alt="Campanha do lixo eletrônico" loading="lazy"><div class="project-info"><span>SUSTENTABILIDADE</span><h3>Campanha do Lixo Eletrônico</h3><p>Arrecadação e conscientização sobre o descarte correto de eletrônicos.</p><button type="button" data-project="4">Ver projeto ↗</button></div></article>
+        <article class="project-card reveal"><img class="project-photo" src="assets/projects/entrega-cestas-basicas.png" alt="Entrega das Cestas Básicas" loading="lazy"><div class="project-info"><span>ASSISTÊNCIA SOCIAL</span><h3>Entrega das Cestas Básicas</h3><p>Mobilização e entrega de alimentos para apoiar famílias.</p><button type="button" data-project="5">Ver projeto ↗</button></div></article>
+        <article class="project-card reveal"><img class="project-photo" src="assets/projects/pascoa-vale-bis.png" alt="Páscoa Vale Bis" loading="lazy"><div class="project-info"><span>SOLIDARIEDADE · PÁSCOA</span><h3>Páscoa Vale Bis</h3><p>Arrecadação e entrega de chocolates para compartilhar alegria.</p><button type="button" data-project="6">Ver projeto ↗</button></div></article>
+      </div>
+
+      <div class="project-modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="projectModalName">
+        <div class="project-modal-backdrop" data-close-project></div>
+        <article class="project-modal-card">
+          <button class="project-modal-close" type="button" aria-label="Fechar projeto" data-close-project>×</button>
+          <img id="projectModalPhoto" src="" alt="">
+          <div class="project-modal-content"><p class="mini-title" id="projectModalCategory"></p><h3 id="projectModalName"></h3><div id="projectModalText"></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section manifesto">
+      <div class="manifesto-shape"></div>
+      <div class="manifesto-content reveal">
+        <div class="eyebrow">ROTARACT · DISTRITO 4470</div>
+        <h2>Não esperamos<br>o futuro.<br><em>Nós criamos.</em></h2>
+        <p>Se existe uma boa ideia, existe um próximo passo.</p>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="contact-card reveal">
+        <div class="section-label">06 / VAMOS CONVERSAR</div>
+        <h2>Tem uma ideia?<br><span>Vamos tirar do papel.</span></h2>
+        <p>Conecte-se com o Rotaract Club de Mirandópolis e descubra como podemos criar impacto juntos.</p>
+        <div class="contact-options">
+          <a class="contact-option" href="tel:+5518991592232"><span class="contact-icon">☎</span><span><small>TELEFONE</small><strong>(18) 99159-2232</strong></span><b>↗</b></a>
+          <a class="contact-option" href="https://wa.me/5518991592232" target="_blank" rel="noopener noreferrer"><span class="contact-icon">◉</span><span><small>WHATSAPP</small><strong>Falar pelo WhatsApp</strong></span><b>↗</b></a>
+          <a class="contact-option" href="https://www.instagram.com/rotaract_mirandopolis/" target="_blank" rel="noopener noreferrer"><span class="contact-icon">◎</span><span><small>INSTAGRAM</small><strong>@rotaract_mirandopolis</strong></span><b>↗</b></a>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary magnetic" href="mailto:contato@rotaractmirandopolis.org">Enviar e-mail ↗</a>
+          <a class="btn btn-outline" href="#inicio">Voltar ao topo ↑</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="Rotaract Club de Mirandópolis">
+    </div>
+    <div class="footer-center">CRIAR · SERVIR · CONECTAR</div>
+    <div class="footer-right">DISTRITO 4470 · MIRANDÓPOLIS/SP<br><small>© <span id="year"></span> Rotaract Club de Mirandópolis</small></div>
+  </footer>
+
+  <script src="script.js?v=4"></script>
+</body>
+</html>
